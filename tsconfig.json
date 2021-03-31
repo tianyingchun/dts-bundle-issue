@@ -1,0 +1,98 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@flatjs/forge": [
+        "packages/forge/src"
+      ],
+      "@flatjs/forge/*": [
+        "packages/forge/src/*"
+      ],
+      "@flatjs/forge-preset-babel": [
+        "packages/forge-preset-babel"
+      ],
+      "@flatjs/forge-plugin-multi-input": [
+        "packages/forge-plugin-multi-input/src"
+      ],
+      "@flatjs/forge-plugin-multi-input/*": [
+        "packages/forge-plugin-multi-input/src/*"
+      ],
+      "@flatjs/forge-plugin-terser": [
+        "packages/forge-plugin-terser/src"
+      ],
+      "@flatjs/forge-plugin-terser/*": [
+        "packages/forge-plugin-terser/src/*"
+      ],
+      "@flatjs/forge-plugin-styling": [
+        "packages/forge-plugin-styling/src"
+      ],
+      "@flatjs/forge-plugin-styling/*": [
+        "packages/forge-plugin-styling/src/*"
+      ],
+      "@flatjs/forge-plugin-postcss-pixel": [
+        "packages/forge-plugin-postcss-pixel/src"
+      ],
+      "@flatjs/forge-plugin-postcss-pixel/*": [
+        "packages/forge-plugin-postcss-pixel/src/*"
+      ],
+      "@flatjs/forge-plugin-postcss-assets": [
+        "packages/forge-plugin-postcss-assets/src"
+      ],
+      "@flatjs/forge-plugin-postcss-assets/*": [
+        "packages/forge-plugin-postcss-assets/src/*"
+      ],
+      "@flatjs/forge-plugin-less-import-alias": [
+        "packages/forge-plugin-less-import-alias/src"
+      ],
+      "@flatjs/forge-plugin-less-import-alias/*": [
+        "packages/forge-plugin-less-import-alias/src/*"
+      ],
+      "@flatjs/forge-plugin-watch-copy": [
+        "packages/forge-plugin-watch-copy/src"
+      ],
+      "@flatjs/forge-plugin-watch-copy/*": [
+        "packages/forge-plugin-watch-copy/src/*"
+      ]
+    },
+    "newLine": "LF",
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "allowJs": false,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "preserveConstEnums": true,
+    "outDir": "dist",
+    "sourceMap": false,
+    "lib": [
+      "ES2016",
+      "DOM"
+    ],
+    "jsx": "preserve",
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "removeComments": false,
+    "experimentalDecorators": true,
+    "rootDir": ".",
+    "target": "esnext",
+    "module": "esnext"
+  },
+  "include": [
+    "scripts/*.ts",
+    "**/*.ts",
+    "**/*.js",
+    ".eslintrc.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/build/**/*.js",
+    "**/dist/**/*.js",
+    "**/esm/**/*.js",
+    "**/cjs/**/*.js",
+    "**/umd/**/*.js"
+  ]
+}
