@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dts-bundle-generator": "^5.8.0",
-    "typescript": "^4.2.3"
+    "dts-bundle-generator": "^5.9.0",
+    "typescript": "^4.2.4"
   }
 }
