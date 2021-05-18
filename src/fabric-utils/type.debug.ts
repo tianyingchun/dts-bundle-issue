@@ -1,11 +1,10 @@
-import { FabricCallbackData } from './type.common';
+import { FabricCallbackData, Json } from './type.common';
 
-export type FabricDebugOptions = {
-  enableDebug: boolean;
+export type FabricDebugOptions<T> = {
+  enableDebug: T;
 };
 
 
-export type FabricDebugCallbackData = FabricCallbackData<{
- 
-  enabled: boolean;
+export type FabricDebugCallbackData<R extends Json> = FabricCallbackData<{
+  enabled: R;
 }>;

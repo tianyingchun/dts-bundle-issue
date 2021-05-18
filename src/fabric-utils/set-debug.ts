@@ -1,3 +1,4 @@
+import { Json } from './type.common';
 import { FabricDebugCallbackData, FabricDebugOptions } from './type.debug';
 
 /**
@@ -5,7 +6,7 @@ import { FabricDebugCallbackData, FabricDebugOptions } from './type.debug';
  * @param options 
  * @returns 
  */
-export const setDebugStatus = (options: FabricDebugOptions): FabricDebugCallbackData => {
+export const setDebugStatus = <T extends Json,R extends Json>(options: FabricDebugOptions<T>): FabricDebugCallbackData<R> => {
   console.log('options', options)
-  return {} as FabricDebugCallbackData;
+  return {} as FabricDebugCallbackData<R>;
 };
